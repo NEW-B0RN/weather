@@ -1,42 +1,86 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Google's primary font */
+  background-color: #f2f2f2; /* Light, neutral background */
+}
+
+.App {
   text-align: center;
+  margin: 20px auto; /* Less top margin, more spacing */
+  width: 90%;
+  max-width: 500px; /* Smaller max-width for responsiveness */
+  border-radius: 8px; /* Softer corner radius */
+  background-color: #fff; /* Crisp white background */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow for depth */
+  padding: 25px; /* More padding around content */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.city-name {
+  font-size: 26px;
+  color: #202124; /* Darker, more neutral heading color */
+  margin-bottom: 8px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loading {
+  font-size: 18px; 
+  color: #5f6368; /* Grayscale font color */
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.date {
+  font-size: 16px;
+  color: #5f6368; 
+  margin-bottom: 15px; /* More spacing below date */
 }
 
-.card {
-  padding: 2em;
+.temp {
+  font-size: 48px;
+  color: #1a73e8; /* Google blue accent color */
+  font-weight: 500; /* Slightly less bold */
 }
 
-.read-the-docs {
-  color: #888;
+.description {
+  color: #3c4043; /* Darker description */
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: space-around; /* More spacing between items */ 
+  padding: 0; /* Remove unnecessary padding */
+}
+
+.column { /* Add styling for individual weather info columns */
+  text-align: center;
+  flex: 1;
+}
+
+.search-engine {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the search bar */
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+.search-engine input {
+  width: 70%;
+  height: 40px;
+  border: 1px solid #dfe1e5; /* Subtler border */
+  border-radius: 24px; /* Google-like rounded input */
+  padding: 5px 15px;
+  font-size: 16px;
+  color: #3c4043;
+}
+
+.search-engine button {
+  background-color: #f8f9fa; /* Light background for button */
+  color: #3c4043;
+  border: none; /* Remove default border */
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-left: 10px; /* Add spacing between input and button */
 }
